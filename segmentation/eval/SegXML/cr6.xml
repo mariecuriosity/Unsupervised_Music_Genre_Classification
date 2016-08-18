@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SegmXML>
+   <metadata>
+      <song canonicalname="cr6">
+         <duration duration_sec="484">08:04:000</duration>
+      </song>
+      <annotation source="computed">
+         <done_by timestamp="2016-05-31 23:42:44">W.O.P.R.</done_by>
+      </annotation>
+      <algorithm>
+         <param name="beats">extrapolated from last beat to end</param>
+         <param name="num_ceps_coeffs">40, including first coeff</param>
+         <param name="features">mfccs, log scaled</param>
+         <param name="distance function @ SM">euclidean</param>
+         <param name="kernel">C96</param>
+         <param name="filter">moving average</param>
+         <param name="filter n">11</param>
+         <param name="cluster features">means over segment´s variables</param>
+         <param name="Cluster method">k-means</param>
+         <param name="Mode">means</param>
+         <param name="number of clusters">3</param>
+         <debug name="mean_beat_interval" scope="ind">0.42569</debug>
+         <debug name="fft size, window size (calculated)" scope="ind">18773</debug>
+         <debug name="filter" scope="global">shifted (1/2*filter_n)-1 to the left</debug>
+         <debug name="no algo boundaries because amplitude sum to low -- " scope="ind"/>
+         <debug name="no algo boundaries because distance &lt; minimal distance 6 -- " scope="ind">3.541043      1.938866      6.385488      9.346032       30.2556      33.58766       37.3493       39.1024      61.50966      65.48027      65.48027      67.54685      70.79764      71.61034       75.4068      79.58639      87.89914      101.1229      106.6144      109.5053      110.3993      113.2437       114.219      115.1361       114.219      117.7368      132.2609      143.1046      146.6456      154.6333      157.6519      169.4012      172.1179      174.0336      175.1829      196.5801      216.1197      220.9495       222.064      230.8063      236.7274      266.7973      269.2586      277.3856       280.172      285.7448      287.4746       291.573      292.6063      293.3029      295.7293      316.8595      321.0855      323.5352      328.7829      329.8395      329.8395      335.0059      347.5563      351.2947      367.3049      371.6005      373.4233      444.4996      482.0694</debug>
+         <debug name="boundaries:" scope="global">excluded, if amplitude sum is lower than threshold</debug>
+         <debug name="bounds_indices" scope="ind">17    50    65    91   105   126   163   180   207   233   251   281   308   337   366   418   452   471   518   550   590   631   655   681   700   724   743   772   806   825   869   896   908   929   939   952   983  1001  1017  1030  1050  1063  1121</debug>
+         <debug name="no algo boundaries because segments merged at merge iteration 42" scope="ind">6.385488       20.2478      26.55202       37.3493      43.35166      52.00109      67.54685      74.53605      85.83256      96.83882      104.5478      117.7368      129.2539      141.1309      152.3577      172.1179      185.1443      192.1916      209.2118      220.9495      236.7274      251.4953      260.0171      269.2586      275.9924      284.3632      290.8764      300.8493      312.6683      319.3208      335.0059      358.7367      371.6005       377.661      385.5441      404.2014      414.8013      424.1241      431.6938      443.3154      451.1289</debug>
+      </algorithm>
+   </metadata>
+   <segmentation>
+      <segment end="05:51:295" end_sec="351.2947" label="Segment2" start="00:00:000" start_sec="0"/>
+      <segment end="07:57:054" end_sec="477.054" label="Segment3" start="05:51:295" start_sec="351.2947"/>
+      <segment end="08:04:000" end_sec="484" label="Segment3" start="07:57:054" start_sec="477.054"/>
+   </segmentation>
+</SegmXML>

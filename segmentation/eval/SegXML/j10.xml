@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SegmXML>
+   <metadata>
+      <song canonicalname="j10">
+         <duration duration_sec="204">03:24:000</duration>
+      </song>
+      <annotation source="computed">
+         <done_by timestamp="2016-05-31 23:42:55">Eliza</done_by>
+      </annotation>
+      <algorithm>
+         <param name="beats">extrapolated from last beat to end</param>
+         <param name="num_ceps_coeffs">40, including first coeff</param>
+         <param name="features">mfccs, log scaled</param>
+         <param name="distance function @ SM">euclidean</param>
+         <param name="kernel">C96</param>
+         <param name="filter">moving average</param>
+         <param name="filter n">11</param>
+         <param name="cluster features">means over segment´s variables</param>
+         <param name="Cluster method">k-means</param>
+         <param name="Mode">means</param>
+         <param name="number of clusters">5</param>
+         <debug name="mean_beat_interval" scope="ind">0.67767</debug>
+         <debug name="fft size, window size (calculated)" scope="ind">29885</debug>
+         <debug name="filter" scope="global">shifted (1/2*filter_n)-1 to the left</debug>
+         <debug name="no algo boundaries because amplitude sum to low -- " scope="ind"/>
+         <debug name="no algo boundaries because distance &lt; minimal distance 6 -- " scope="ind">26.31982      29.75637      32.60082      41.99329      163.6194       167.114       167.114      172.2224      172.2224      175.8912      186.9206      192.6327</debug>
+         <debug name="boundaries:" scope="global">excluded, if amplitude sum is lower than threshold</debug>
+         <debug name="bounds_indices" scope="ind">6   23   52   64   79   91  102  116  144  167  196  220  257  283  296</debug>
+         <debug name="no algo boundaries because segments merged at merge iteration 4" scope="ind">65.77052      149.5017      192.6327</debug>
+      </algorithm>
+   </metadata>
+   <segmentation>
+      <segment end="00:12:121" end_sec="12.1208" label="Segment2" start="00:02:891" start_sec="2.8909"/>
+      <segment end="00:29:756" end_sec="29.7564" label="Segment1" start="00:12:121" start_sec="12.1208"/>
+      <segment end="00:38:290" end_sec="38.2897" label="Segment1" start="00:29:756" start_sec="29.7564"/>
+      <segment end="00:49:447" end_sec="49.4469" label="Segment1" start="00:38:290" start_sec="38.2897"/>
+      <segment end="00:57:957" end_sec="57.957" label="Segment1" start="00:49:447" start_sec="49.4469"/>
+      <segment end="01:16:487" end_sec="76.4865" label="Segment1" start="00:57:957" start_sec="57.957"/>
+      <segment end="01:37:141" end_sec="97.1407" label="Segment1" start="01:16:487" start_sec="76.4865"/>
+      <segment end="01:51:061" end_sec="111.061" label="Segment1" start="01:37:141" start_sec="97.1407"/>
+      <segment end="02:12:249" end_sec="132.2493" label="Segment1" start="01:51:061" start_sec="111.061"/>
+      <segment end="02:55:891" end_sec="175.8912" label="Segment1" start="02:12:249" start_sec="132.2493"/>
+      <segment end="03:20:400" end_sec="200.3998" label="Segment1" start="02:55:891" start_sec="175.8912"/>
+   </segmentation>
+</SegmXML>

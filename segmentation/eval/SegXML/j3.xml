@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SegmXML>
+   <metadata>
+      <song canonicalname="j3">
+         <duration duration_sec="290">04:50:000</duration>
+      </song>
+      <annotation source="computed">
+         <done_by timestamp="2016-05-31 23:42:58">The Matrix</done_by>
+      </annotation>
+      <algorithm>
+         <param name="beats">extrapolated from last beat to end</param>
+         <param name="num_ceps_coeffs">40, including first coeff</param>
+         <param name="features">mfccs, log scaled</param>
+         <param name="distance function @ SM">euclidean</param>
+         <param name="kernel">C96</param>
+         <param name="filter">moving average</param>
+         <param name="filter n">11</param>
+         <param name="cluster features">means over segment´s variables</param>
+         <param name="Cluster method">k-means</param>
+         <param name="Mode">means</param>
+         <param name="number of clusters">5</param>
+         <debug name="mean_beat_interval" scope="ind">0.54725</debug>
+         <debug name="fft size, window size (calculated)" scope="ind">24134</debug>
+         <debug name="filter" scope="global">shifted (1/2*filter_n)-1 to the left</debug>
+         <debug name="no algo boundaries because amplitude sum to low -- " scope="ind"/>
+         <debug name="no algo boundaries because distance &lt; minimal distance 6 -- " scope="ind">33.73859      33.00717      34.84154      34.84154      35.56136      35.56136      40.22857      46.53279      48.20463      48.20463      50.86331        59.118      61.05687      61.05687      66.58322      66.58322      69.57859      73.49116       82.3844      83.75438      126.2353      130.6819      151.4986      156.3051      156.3051       159.672      233.8133      248.3026      262.8499</debug>
+         <debug name="boundaries:" scope="global">excluded, if amplitude sum is lower than threshold</debug>
+         <debug name="bounds_indices" scope="ind">6   26   50   93  119  163  179  203  217  233  247  268  286  317  337  360  391  414  429  457  484  507  526</debug>
+         <debug name="no algo boundaries because segments merged at merge iteration 15" scope="ind">24.13714      50.86331      69.57859      78.79692      107.5084      116.9473      130.6819       159.672      171.0498      185.1791      205.6243      228.9139      244.1927      260.2493</debug>
+      </algorithm>
+   </metadata>
+   <segmentation>
+      <segment end="00:12:690" end_sec="12.6897" label="Segment2" start="00:02:821" start_sec="2.8212"/>
+      <segment end="00:40:229" end_sec="40.2286" label="Segment1" start="00:12:690" start_sec="12.6897"/>
+      <segment end="01:30:883" end_sec="90.8829" label="Segment1" start="00:40:229" start_sec="40.2286"/>
+      <segment end="01:37:640" end_sec="97.6399" label="Segment1" start="01:30:883" start_sec="90.8829"/>
+      <segment end="02:22:048" end_sec="142.0481" label="Segment1" start="01:37:640" start_sec="97.6399"/>
+      <segment end="03:39:568" end_sec="219.5679" label="Segment1" start="02:22:048" start_sec="142.0481"/>
+      <segment end="04:34:564" end_sec="274.5644" label="Segment1" start="03:39:568" start_sec="219.5679"/>
+      <segment end="04:46:836" end_sec="286.8361" label="Segment1" start="04:34:564" start_sec="274.5644"/>
+   </segmentation>
+</SegmXML>

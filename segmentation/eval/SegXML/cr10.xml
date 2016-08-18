@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SegmXML>
+   <metadata>
+      <song canonicalname="cr10">
+         <duration duration_sec="210">03:30:000</duration>
+      </song>
+      <annotation source="computed">
+         <done_by timestamp="2016-05-31 23:42:27">Deep Thought</done_by>
+      </annotation>
+      <algorithm>
+         <param name="beats">extrapolated from last beat to end</param>
+         <param name="num_ceps_coeffs">40, including first coeff</param>
+         <param name="features">mfccs, log scaled</param>
+         <param name="distance function @ SM">euclidean</param>
+         <param name="kernel">C96</param>
+         <param name="filter">moving average</param>
+         <param name="filter n">11</param>
+         <param name="cluster features">means over segment´s variables</param>
+         <param name="Cluster method">k-means</param>
+         <param name="Mode">means</param>
+         <param name="number of clusters">5</param>
+         <debug name="mean_beat_interval" scope="ind">0.46985</debug>
+         <debug name="fft size, window size (calculated)" scope="ind">20720</debug>
+         <debug name="filter" scope="global">shifted (1/2*filter_n)-1 to the left</debug>
+         <debug name="no algo boundaries because amplitude sum to low -- " scope="ind"/>
+         <debug name="no algo boundaries because distance &lt; minimal distance 6 -- " scope="ind">13.52562      28.40961      90.04698      91.93941       112.582      113.5107      129.7531      133.4799      133.4799      138.1239      138.1239      139.0411      143.2091      193.7241</debug>
+         <debug name="boundaries:" scope="global">excluded, if amplitude sum is lower than threshold</debug>
+         <debug name="bounds_indices" scope="ind">6   22   51   96  119  155  171  193  210  239  261  294  315  340  378  391  409  441</debug>
+         <debug name="no algo boundaries because segments merged at merge iteration 12" scope="ind">25.08916      74.02522      81.53687      91.93941      99.95029      113.5107      123.7275      139.0411      148.7935       160.357      178.0158</debug>
+      </algorithm>
+   </metadata>
+   <segmentation>
+      <segment end="00:10:971" end_sec="10.9714" label="Segment2" start="00:02:740" start_sec="2.74"/>
+      <segment end="00:46:440" end_sec="46.4399" label="Segment3" start="00:10:971" start_sec="10.9714"/>
+      <segment end="00:57:295" end_sec="57.2952" label="Segment3" start="00:46:440" start_sec="46.4399"/>
+      <segment end="03:04:030" end_sec="184.0298" label="Segment3" start="00:57:295" start_sec="57.2952"/>
+      <segment end="03:12:331" end_sec="192.3309" label="Segment3" start="03:04:030" start_sec="184.0298"/>
+      <segment end="03:27:029" end_sec="207.0291" label="Segment3" start="03:12:331" start_sec="192.3309"/>
+   </segmentation>
+</SegmXML>

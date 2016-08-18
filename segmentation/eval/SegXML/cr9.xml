@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SegmXML>
+   <metadata>
+      <song canonicalname="cr9">
+         <duration duration_sec="158">02:38:000</duration>
+      </song>
+      <annotation source="computed">
+         <done_by timestamp="2016-05-31 23:42:52">Master Control Program</done_by>
+      </annotation>
+      <algorithm>
+         <param name="beats">extrapolated from last beat to end</param>
+         <param name="num_ceps_coeffs">40, including first coeff</param>
+         <param name="features">mfccs, log scaled</param>
+         <param name="distance function @ SM">euclidean</param>
+         <param name="kernel">C96</param>
+         <param name="filter">moving average</param>
+         <param name="filter n">11</param>
+         <param name="cluster features">means over segment´s variables</param>
+         <param name="Cluster method">k-means</param>
+         <param name="Mode">means</param>
+         <param name="number of clusters">5</param>
+         <debug name="mean_beat_interval" scope="ind">0.45746</debug>
+         <debug name="fft size, window size (calculated)" scope="ind">20174</debug>
+         <debug name="filter" scope="global">shifted (1/2*filter_n)-1 to the left</debug>
+         <debug name="no algo boundaries because amplitude sum to low -- " scope="ind"/>
+         <debug name="no algo boundaries because distance &lt; minimal distance 6 -- " scope="ind">27.17896      36.24635      37.12871      64.84172      88.64218      89.93088      115.4264      118.0735      121.1966      132.7949      134.1068      142.4893      144.8461      149.2346       152.172      155.5853</debug>
+         <debug name="boundaries:" scope="global">excluded, if amplitude sum is lower than threshold</debug>
+         <debug name="bounds_indices" scope="ind">16   38   52   87  110  128  144  163  186  209  245  274  303  320  341</debug>
+         <debug name="no algo boundaries because segments merged at merge iteration 3" scope="ind">89.93088      118.0735</debug>
+      </algorithm>
+   </metadata>
+   <segmentation>
+      <segment end="00:06:293" end_sec="6.2926" label="Segment2" start="00:00:000" start_sec="0"/>
+      <segment end="00:15:848" end_sec="15.8476" label="Segment5" start="00:06:293" start_sec="6.2926"/>
+      <segment end="00:21:954" end_sec="21.9545" label="Segment5" start="00:15:848" start_sec="15.8476"/>
+      <segment end="00:37:129" end_sec="37.1287" label="Segment5" start="00:21:954" start_sec="21.9545"/>
+      <segment end="00:47:067" end_sec="47.0668" label="Segment5" start="00:37:129" start_sec="37.1287"/>
+      <segment end="00:54:869" end_sec="54.8688" label="Segment5" start="00:47:067" start_sec="47.0668"/>
+      <segment end="01:01:846" end_sec="61.8463" label="Segment5" start="00:54:869" start_sec="54.8688"/>
+      <segment end="01:10:043" end_sec="70.043" label="Segment5" start="01:01:846" start_sec="61.8463"/>
+      <segment end="01:20:028" end_sec="80.0276" label="Segment5" start="01:10:043" start_sec="70.043"/>
+      <segment end="01:45:361" end_sec="105.3605" label="Segment5" start="01:20:028" start_sec="80.0276"/>
+      <segment end="02:14:107" end_sec="134.1068" label="Segment5" start="01:45:361" start_sec="105.3605"/>
+      <segment end="02:24:846" end_sec="144.8461" label="Segment5" start="02:14:107" start_sec="134.1068"/>
+      <segment end="02:35:585" end_sec="155.5853" label="Segment5" start="02:24:846" start_sec="144.8461"/>
+   </segmentation>
+</SegmXML>
